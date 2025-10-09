@@ -6,10 +6,9 @@ nav {
   height: 80px;
   background-color: #021932;
   border-bottom: 2px solid #16617e;
-  flex-wrap: wrap; /* permite que los elementos bajen en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
-/* Logo + título */
 .logo-section {
   display: flex;
   align-items: center;
@@ -27,7 +26,6 @@ nav {
   border-radius: 50%;
 }
 
-/* Links */
 .links-section {
   list-style: none;
   display: flex;
@@ -45,7 +43,6 @@ nav {
   color: #16617e;
 }
 
-/* Menú hamburguesa */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -53,17 +50,16 @@ nav {
   cursor: pointer;
 }
 
-/* Responsive: pantallas menores a 768px */
 @media (max-width: 768px) {
   .links-section {
     flex-direction: column;
     width: 100%;
-    display: none; /* oculto por defecto */
+    display: none;
     margin-top: 1rem;
   }
 
   .links-section.active {
-    display: flex; /* mostrar cuando se active */
+    display: flex;
   }
 
   .menu-toggle {

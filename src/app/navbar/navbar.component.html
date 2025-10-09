@@ -4,9 +4,11 @@
     <h2>Alco-Check</h2>
   </div>
 
-  <div class="menu-toggle" id="mobile-menu">&#9776;</div> <!-- ícono hamburguesa -->
+  <div class="menu-toggle" (click)="toggleMenu()">
+    &#9776; <!-- ícono hamburguesa -->
+  </div>
 
-  <ul class="links-section" id="nav-links">
+  <ul class="links-section" [class.active]="menuOpen">
     <li><a href="#video">Video</a></li>
     <li><a href="#como-funciona">Como funciona</a></li>
     <li><a href="#Mision-vision">Mision y vision</a></li>
