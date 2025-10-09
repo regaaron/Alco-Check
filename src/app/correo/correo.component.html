@@ -1,0 +1,43 @@
+<section class="email-signup">
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="icon">
+          <!-- Puedes reemplazar con un SVG o FontAwesome -->
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h2>¿Interesado en ALCO-CHECK?</h2>
+        <p>
+          Déjanos tu correo y te contactaremos con información exclusiva sobre disponibilidad, precios especiales y
+          lanzamientos.
+        </p>
+      </div>
+
+      <!-- Formulario -->
+      <form *ngIf="!submitted" (ngSubmit)="handleSubmit()" class="form">
+        <div class="input-group">
+          <input
+            type="email"
+            placeholder="tu@email.com"
+            [(ngModel)]="email"
+            name="email"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </div>
+        <p class="note">
+          No compartimos tu información. Puedes cancelar tu suscripción en cualquier momento.
+        </p>
+      </form>
+
+      <!-- Mensaje de éxito -->
+      <div *ngIf="submitted" class="success-message">
+        <div class="icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <p class="title">¡Gracias por tu interés!</p>
+        <p class="subtitle">Te contactaremos pronto con más información.</p>
+      </div>
+    </div>
+  </div>
+</section>

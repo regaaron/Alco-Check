@@ -1,0 +1,25 @@
+<section class="faq-section">
+  <div class="container">
+    <div class="text-center mb-16">
+      <h2>Preguntas Frecuentes</h2>
+      <p>Todo lo que necesitas saber sobre ALCO-CHECK</p>
+    </div>
+
+    <div class="faqs">
+      <div *ngFor="let faq of faqs; let i = index" class="faq-card">
+        <button (click)="toggle(i)" class="faq-question">
+          <span>{{ faq.question }}</span>
+          <span class="chevron" [class.rotate]="openIndex === i">&#9660;</span>
+        </button>
+        <div class="faq-answer" [class.open]="openIndex === i">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="more text-center">
+      <p>¿Tienes más preguntas?</p>
+      <a href="#signup">Contáctanos y te responderemos pronto</a>
+    </div>
+  </div>
+</section>

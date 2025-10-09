@@ -1,0 +1,52 @@
+nav {
+  
+  display: flex;
+  justify-content: space-between; /* separa las dos secciones */
+  align-items: center;            /* centra verticalmente */
+  padding: 0 2rem;                /* agrega espacio a los lados */
+  height: 80px;
+  background-color: #021932;
+  border-bottom: 2px solid #16617e;
+}
+
+/* Logo + título al inicio */
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* espacio entre logo y texto */
+}
+
+.logo-section h2 {
+  color: #16617e;
+  margin: 0; /* elimina margen por defecto */
+}
+
+.logo-section img {
+  height: 60px; /* tamaño del logo */
+  width: 60px;
+  border-radius: 50%; /* hace el logo circular */
+}
+
+/* Links centrados en su mitad del espacio */
+.links-section {
+  list-style: none;
+  flex: 1;                        /* ocupa todo el espacio restante */
+  display: flex;
+  justify-content: center;        /* centra los links */
+  color: ;
+  gap: 2rem;                      /* espacio entre ellos */
+}
+
+/* Opcional: quitar subrayado y cambiar color */
+.links-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.links-section a:hover{
+    color: #16617e;
+}

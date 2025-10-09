@@ -1,0 +1,55 @@
+.mission-vision {
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #000814, #001530, #000000);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+/* --- Bloques --- */
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+/* --- Icono circular --- */
+.icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #4da6ff;
+  background-color: rgba(77, 166, 255, 0.15);
+}
+
+.icon.bg-accent {
+  color: #ffcc66;
+  background-color: rgba(255, 204, 102, 0.15);
+}
+
+/* --- Títulos y texto --- */
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}

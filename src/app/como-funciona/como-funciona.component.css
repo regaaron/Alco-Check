@@ -1,0 +1,79 @@
+.how-it-works {
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #000814, #001530, #000000);
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  
+}
+
+.header p {
+  font-size: 1.25rem;
+  color: #b0b0b0;
+  margin-bottom: 4rem;
+}
+
+/* --- Tarjetas --- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(10, 15, 25, 0.8);
+  border: 2px solid rgba(50, 80, 130, 0.5);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 50, 100, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgba(77, 166, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+/* --- Icono circular --- */
+.icon {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(77, 166, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+/* --- Número grande --- */
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4da6ff;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Título y texto --- */
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.card p {
+  color: #b0b0b0;
+  line-height: 1.6;
+}

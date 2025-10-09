@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura completa de la ventana */
+}
+
+.nav-bar{
+    display: sticky;
+}
+.main-section {
+    flex: 1; /* Hace que la sección principal crezca para ocupar el espacio disponible */
+    padding: 20px
+    background-color: #f4f4f4; /* Color de fondo claro para la sección principal */
+}
