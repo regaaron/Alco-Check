@@ -1,45 +1,39 @@
 nav {
-  
   display: flex;
-  justify-content: space-between; /* separa las dos secciones */
-  align-items: center;            /* centra verticalmente */
-  padding: 0 2rem;                /* agrega espacio a los lados */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
   height: 80px;
   background-color: #021932;
   border-bottom: 2px solid #16617e;
+  flex-wrap: wrap; /* permite que los elementos bajen en pantallas pequeñas */
 }
 
-/* Logo + título al inicio */
+/* Logo + título */
 .logo-section {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 10px; /* espacio entre logo y texto */
+  gap: 10px;
 }
 
 .logo-section h2 {
   color: #16617e;
-  margin: 0; /* elimina margen por defecto */
+  margin: 0;
 }
 
 .logo-section img {
-  height: 60px; /* tamaño del logo */
+  height: 60px;
   width: 60px;
-  border-radius: 50%; /* hace el logo circular */
+  border-radius: 50%;
 }
 
-/* Links centrados en su mitad del espacio */
+/* Links */
 .links-section {
   list-style: none;
-  flex: 1;                        /* ocupa todo el espacio restante */
   display: flex;
-  justify-content: center;        /* centra los links */
-  color: ;
-  gap: 2rem;                      /* espacio entre ellos */
+  gap: 2rem;
 }
 
-/* Opcional: quitar subrayado y cambiar color */
 .links-section a {
   text-decoration: none;
   color: white;
@@ -47,6 +41,32 @@ nav {
   transition: color 0.3s;
 }
 
-.links-section a:hover{
-    color: #16617e;
+.links-section a:hover {
+  color: #16617e;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive: pantallas menores a 768px */
+@media (max-width: 768px) {
+  .links-section {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* oculto por defecto */
+    margin-top: 1rem;
+  }
+
+  .links-section.active {
+    display: flex; /* mostrar cuando se active */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
