@@ -4,15 +4,17 @@
     <h2>Alco-Check</h2>
   </div>
 
-  <div class="menu-toggle" (click)="toggleMenu()">
-    &#9776; <!-- ícono hamburguesa -->
+  <div class="menu-toggle" (click)="menuOpen = !menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <ul class="links-section" [class.active]="menuOpen">
-    <li><a href="#video">Video</a></li>
-    <li><a href="#como-funciona">Como funciona</a></li>
-    <li><a href="#Mision-vision">Mision y vision</a></li>
-    <li><a href="#preguntas">Preguntas frecuentes</a></li>
-    <li><a href="#correo">Correo</a></li>
+  <ul class="links-section" [class.open]="menuOpen">
+    <li><a href="#video" (click)="closeMenu()">Video</a></li>
+    <li><a href="#como-funciona" (click)="closeMenu()">Como funciona</a></li>
+    <li><a href="#Mision-vision" (click)="closeMenu()">Mision y vision</a></li>
+    <li><a href="#preguntas" (click)="closeMenu()">Preguntas frecuentes</a></li>
+    <li><a href="#correo" (click)="closeMenu()">Correo</a></li>
   </ul>
 </nav>

@@ -10,8 +10,9 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
    menuOpen = false;
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+  closeMenu() {
+    setTimeout(() => {
+      this.menuOpen = false;
+    }, 300); // Espera 300ms para que navegue primero
   }
-
 }
